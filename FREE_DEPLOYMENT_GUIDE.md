@@ -2,11 +2,11 @@
 
 ---
 
-## 🚀 1. Immediate Live Public Link (Active Right Now!)
+## 🚀 1. Official Cloudflare Public Live Link (Active & Tested!)
 
-Aapka prototype abhi internet par live chal raha hai:
+Aapka prototype abhi high-speed enterprise **Cloudflare Tunnel** par live chal raha hai:
 
-> **🔗 Live Prototype URL:** `https://f03058a285ae70.lhr.life`
+> **🔗 Live Prototype URL:** `https://adware-mostly-windsor-comics.trycloudflare.com`
 > *(SSL Encrypted HTTPS, Zero Config, Fully Functional Full-Stack Prototype)*
 
 ### 🔑 Demo Login Credentials (Judges ke liye)
@@ -58,10 +58,10 @@ Humne already ye configuration files create kar di hain:
 
 ---
 
-## ⚡ 3. Anytime 1-Click Live Tunnel (Your Computer)
+## ⚡ 3. Anytime 1-Click Cloudflare Tunnel (Your Computer)
 
 Aapke project root folder me **`SHARE_LIVE_LINK.bat`** file bana di gayi hai:
 - Jab bhi aap judges ko live demo dikhana chahein:
-  1. `START_SYSTEM.bat` chalao (Backend + Frontend live ho jayenge).
+  1. `START_SYSTEM.bat` chalao (Port 8000 on ho jayega).
   2. `SHARE_LIVE_LINK.bat` par double-click karo.
-  3. Terminal par **`https://....lhr.life`** link aayega — use copy karke judges ko bhej do!
+  3. Terminal par **`https://....trycloudflare.com`** link aayega — use copy karke judges ko bhej do!
