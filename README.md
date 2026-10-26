@@ -1,5 +1,22 @@
 # SENTINELFUSION AI
-## Defence Situational Awareness, Intelligence Correlation & Decision Support Platform
+## Defence Situational Awareness, Multi-Sensor Correlation & Tactical Decision Support Platform
+### 🇮🇳 Dark Tricolour Edition (Indian National Flag Theme)
+
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115%2B-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![React 19](https://img.shields.io/badge/React-19.0-61DAFB.svg?logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-8.0-646CFF.svg?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Dark Tricolour](https://img.shields.io/badge/Theme-Dark%20Tricolour-FF9933.svg?logoColor=white)](https://github.com/Satyam3se/SentinelFusionAi)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-138808.svg?logo=cloudflare&logoColor=white)](https://adware-mostly-windsor-comics.trycloudflare.com)
+
+> **🚀 LIVE PROTOTYPE ACCESS**:
+> - **Public URL**: [https://adware-mostly-windsor-comics.trycloudflare.com](https://adware-mostly-windsor-comics.trycloudflare.com)
+> - **Review Officer Account**: `reviewer` / `SentinelReviewerDemo#2026`
+> - **Intelligence Analyst Account**: `analyst` / `SentinelAnalystDemo#2026`
+> - **Administrator Account**: `admin` / `SentinelAdminDemo#2026`
+
+---
 
 > **IMPORTANT SCOPE & DISCLAIMER**:
 > SentinelFusion AI is an **independent prototype** designed for hackathon demonstration and academic/defence-software systems evaluation. It is **NOT** an official Indian Army, Ministry of Defence (MoD), or DRDO system. All operational sectors (`DEMO-ZONE-A`, `DEMO-ZONE-B`, etc.) and telemetry records (`REP-001`, `REP-002`, etc.) are **strictly synthetic demonstration data**. The platform does not connect to live operational sensors, classified networks, or weapons systems, and prioritizes human-reviewed situational awareness and data integrity rather than autonomous engagement decisions.
@@ -8,14 +25,15 @@
 
 ## 1. Executive Summary & Vision
 
-Traditional defence intelligence displays often overwhelm operators with false alarms or present every correlation recommendation as fact. **SentinelFusion AI** implements **Failure-Aware Decision Support**:
-1. **Explicit Uncertainty Surfacing**: Distinguishes between verified multi-sensor corroboration, possible relationships, direct contradictions, and insufficient evidence.
-2. **Duplicate Suppression**: Identifies exact duplicate submissions and suppresses them from corroboration counts to prevent artificial threat inflation.
-3. **Contradiction Detection**: Surfaces conflicting accounts (e.g. optical sighting of a drone vs forward post sighting of routine perimeter patrol) side-by-side rather than silently picking one as truth.
-4. **Silence Is Not Tranquility**: Distinguishes between "source checked and sector clear" vs "no sensor heartbeat received" (sensor outage or link failure).
-5. **Mandatory Human-in-the-Loop Justifications**: Requires human officers to record mandatory operational explanations whenever overriding or correcting system recommendations.
-6. **Append-Only Immutable Audit Trail**: All sign-ins, imports, correlation cycles, review corrections, and exports are preserved for accountability.
-7. **100% Offline Standalone Capable**: Operates locally with embedded SQLite WAL storage and deterministic Python rules without requiring external cloud AI APIs or internet access.
+Traditional defence intelligence displays often overwhelm operators with false alarms or present every correlation recommendation as fact. **SentinelFusion AI** implements **Failure-Aware Decision Support & Active Tactical Command (C2)**:
+1. **360° Active Phased-Array Radar Scope**: Real-time 50km sweeping radar beam, polar coordinates tracking (bearing/range/altitude/velocity), and interactive target tracking across fictional operational sectors.
+2. **Electronic Warfare (EW) Spoofing Anomaly Detection**: Surfaces RF/acoustic sensor contradictions, flagging high EW spoofing risk (74%) and downgrading sensor trust index to prevent false alarms.
+3. **AI Courses of Action (COA) Matrix**: Synthesizes and ranks 3 tactical response alternatives per contact (Reconnaissance, Intercept, Counter-EW Jamming) with readiness time and risk profiles.
+4. **100% Human-in-the-Loop Military Accountability**: Strictly enforces officer sign-off with mandatory tactical justifications before issuing cryptographic military order receipts (`ORD-YYYYMMDD...`).
+5. **Explicit Uncertainty & Contradiction Surfacing**: Distinguishes between verified multi-sensor corroboration, possible relationships, direct contradictions, and insufficient evidence.
+6. **Append-Only Immutable Audit Trail**: All sign-ins, imports, correlation cycles, review corrections, tactical orders, and exports are cryptographically preserved in SQLite WAL storage.
+7. **Offline-First Standalone Edge Resilience**: Zero external cloud API dependency. Built-in offline queue automatically reconciles changes when reconnected.
+
 
 ---
 
