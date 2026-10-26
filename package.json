@@ -1,0 +1,21 @@
+{
+  "name": "sentinelfusion-ai",
+  "version": "1.0.0",
+  "description": "Defence Situational Awareness, Multi-Sensor Correlation & Tactical Decision Support Platform",
+  "scripts": {
+    "frontend:install": "npm --prefix frontend install",
+    "frontend:build": "npm --prefix frontend run build",
+    "build": "npm --prefix frontend install && npm --prefix frontend run build",
+    "start": "cd backend && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+  },
+  "keywords": [
+    "defence",
+    "situational-awareness",
+    "fastapi",
+    "react",
+    "tactical-radar",
+    "military-c2"
+  ],
+  "author": "SentinelFusion AI Team",
+  "license": "MIT"
+}

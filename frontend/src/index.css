@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Official Indian National Flag (Tiranga) Palette */
+    --tiranga-saffron: #FF9933;
+    --tiranga-saffron-deep: #FF671F;
+    --tiranga-white: #FFFFFF;
+    --tiranga-silver: #F1F5F9;
+    --tiranga-green: #138808;
+    --tiranga-green-deep: #046A38;
+    --tiranga-chakra-navy: #000080;
+    --tiranga-chakra-blue: #2563EB;
+
+    /* Base Dark Canvas */
+    --bg-dark-top: #150903;
+    --bg-dark-mid: #060b18;
+    --bg-dark-bottom: #021408;
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #64748B;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #06080F;
+    /* Majestic Dark Indian Flag (Tiranga) Background Atmosphere:
+       Top Saffron Radiance, Center Ashoka Chakra Blue, Bottom India Green Radiance */
+    background-image: 
+      radial-gradient(ellipse 130% 45% at 50% -8%, rgba(255, 103, 31, 0.32) 0%, transparent 75%),
+      radial-gradient(ellipse 90% 45% at 50% 50%, rgba(37, 99, 235, 0.22) 0%, transparent 75%),
+      radial-gradient(ellipse 130% 45% at 50% 108%, rgba(19, 136, 8, 0.30) 0%, transparent 75%),
+      linear-gradient(180deg, #180a03 0%, #060b18 45%, #050a14 55%, #021408 100%);
+    background-attachment: fixed;
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Rajdhani', -apple-system, sans-serif;
+    letter-spacing: 0.05em;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    border: none;
+  }
+}
+
+/* Tactical UI Grid */
+.tactical-grid-bg {
+  background-image: 
+    linear-gradient(rgba(255, 153, 51, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(19, 136, 8, 0.09) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+/* Official Indian Flag 3-Stripe Ribbons */
+.tiranga-ribbon-horizontal {
+  height: 4px;
+  background: linear-gradient(90deg, #FF9933 0%, #FF9933 33.3%, #FFFFFF 33.3%, #FFFFFF 66.6%, #138808 66.6%, #138808 100%);
+  box-shadow: 0 0 16px rgba(255, 153, 51, 0.5), 0 0 16px rgba(19, 136, 8, 0.5);
+}
+
+.tiranga-stripe-vertical {
+  background: linear-gradient(180deg, #FF9933 0%, #FF9933 33.3%, #FFFFFF 33.3%, #FFFFFF 66.6%, #138808 66.6%, #138808 100%);
+  box-shadow: 0 0 12px rgba(255, 153, 51, 0.4), 0 0 12px rgba(19, 136, 8, 0.4);
+}
+
+/* Real 4px Vertical Indian Flag Left Border on Active Sidebar Items */
+.tiranga-active-tab {
+  background: linear-gradient(90deg, rgba(255, 103, 31, 0.20) 0%, rgba(11, 17, 32, 0.95) 50%, rgba(4, 106, 56, 0.20) 100%);
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(180deg, #FF9933 0%, #FF9933 33.3%, #FFFFFF 33.3%, #FFFFFF 66.6%, #138808 66.6%, #138808 100%) 1;
+  box-shadow: 0 0 16px rgba(255, 153, 51, 0.25);
+  color: #FFFFFF !important;
+  font-weight: 700;
+}
+
+/* Card Styling Utilities for Dark Tricolour */
+.card-tiranga {
+  position: relative;
+  background: rgba(11, 17, 32, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.6);
+}
+.card-tiranga::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #FF9933 0%, #FF9933 33.3%, #FFFFFF 33.3%, #FFFFFF 66.6%, #138808 66.6%, #138808 100%);
+  box-shadow: 0 0 12px rgba(255, 153, 51, 0.5);
+  z-index: 10;
+}
+
+.card-saffron {
+  background: rgba(11, 17, 32, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 153, 51, 0.3);
+  border-top: 3px solid #FF9933;
+  box-shadow: 0 10px 30px -5px rgba(255, 103, 31, 0.15);
+  border-radius: 0.75rem;
+}
+
+.card-navy {
+  background: rgba(11, 17, 32, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  border-top: 3px solid #2563EB;
+  box-shadow: 0 10px 30px -5px rgba(37, 99, 235, 0.15);
+  border-radius: 0.75rem;
+}
+
+.card-green {
+  background: rgba(11, 17, 32, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(19, 136, 8, 0.3);
+  border-top: 3px solid #138808;
+  box-shadow: 0 10px 30px -5px rgba(19, 136, 8, 0.15);
+  border-radius: 0.75rem;
+}
+
+/* Tricolour Text Gradient */
+.tiranga-text {
+  background: linear-gradient(90deg, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.saffron-gradient-text {
+  background: linear-gradient(135deg, #FFB366 0%, #FF671F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-gradient-text {
+  background: linear-gradient(135deg, #4ADE80 0%, #046A38 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glowing effects */
+.saffron-glow {
+  box-shadow: 0 0 20px rgba(255, 153, 51, 0.4);
+}
+
+.green-glow {
+  box-shadow: 0 0 20px rgba(19, 136, 8, 0.4);
+}
+
+.chakra-navy-glow {
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+}
+
+/* 24-spoke Ashoka Chakra slow rotate */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* Custom Tactical Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #06080F;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #FF9933, #FFFFFF, #138808);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF9933;
+}
